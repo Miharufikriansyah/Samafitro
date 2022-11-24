@@ -1,0 +1,29 @@
+{
+    "data" : [
+        {
+            "product" : "Axioo Axioo Mybook",
+            "price" : 14000000,
+            "img" : "image/content/Axioo.png"
+        },
+        {
+            "product" : "Axioo Axioo Mybook",
+            "price" : 499500000,
+            "img" : "image/content/Axioo.png"
+        },
+        {
+            "product" : "Axioo Axioo Mybook",
+            "price" : 91020000,
+            "img" : "image/content/Axioo.png"
+        },
+        {
+            "product" : "Axioo Axioo Mybook",
+            "price" : 27056250,
+            "img" : "image/content/Axioo.png"
+        },
+        {
+            "product" : "Axioo Axioo Mybook",
+            "price" : 11800000,
+            "img" : "image/content/Axioo.png"
+        }
+    ]
+}
