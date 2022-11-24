@@ -1,0 +1,107 @@
+{
+    "data" : [
+        {
+          "product": "SOKKIA AUTOMATIC LEVEL",
+          "type": "Import",
+          "quantity": "5",
+          "Price": 5550000
+        },
+        {
+          "product": "SOKKIA GPS GEODETIK",
+          "type": "Import",
+          "quantity": "5",
+          "Price": 499500000
+        },
+        {
+          "product": "SOKKIA TOTAL STATION",
+          "type": "Import",
+          "quantity": "5",
+          "Price": 91020000
+        },
+        {
+          "product": "CANON REMOTE CAMERA INDOOR CR-N300",
+          "type": "Import",
+          "quantity": "2",
+          "Price": 39627000
+        },
+        {
+          "product": "CANON REMOTE CAMERA INDOOR CR-N500",
+          "type": "Import",
+          "quantity": "2",
+          "Price": 79365000
+        },
+        {
+          "product": "CANON CONTROLLER RC-IP100",
+          "type": "Import",
+          "quantity": "2",
+          "Price": 27056250
+        },
+        {
+          "product": "CANON REMOTE CAMERA OUTDOOR CR-X300",
+          "type": "Import",
+          "quantity": "2",
+          "Price": 37000000
+        },
+        
+        {
+          "product": "EPSON ECOTANK L350 A4 WI-FI ALL-IN-ONE IN TANK PRINTER",
+          "type": "Import",
+          "quantity": "10",
+          "Price": 0
+        },
+        {
+          "product": "AXIOO Axioo Mybook Pro H5 (4S2) BMP 50,7...",
+          "type": "PDN",
+          "quantity": "10",
+          "Price": 10000000
+        },
+        {
+          "product": "AXIOO Axioo Mybook Pro H5 (4S5) BMP 50,7...",
+          "type": "PDN",
+          "quantity": "10",
+          "Price": 10700000
+        },
+        {
+          "product": "AXIOO Axioo Mybook Pro H5 (4S9) BMP 50,7...",
+          "type": "PDN",
+          "quantity": "10",
+          "Price": 11800000
+        },
+        {
+          "product": "AXIOO Mybook Pro H5 (4H9) BMP 50,70%,La...",
+          "type": "PDN",
+          "quantity": "10",
+          "Price": 10600000
+        },
+        {
+          "product": "AXIOO Mybook Pro H5 (8S2) BMP 46,63%,La...",
+          "type": "PDN",
+          "quantity": "10",
+          "Price": 10400000
+        },
+        {
+          "product": "AXIOO Mybook Pro H5 (8S5) BMP 50,70%,La...",
+          "type": "PDN",
+          "quantity": "10",
+          "Price": 11600000
+        },
+        {
+          "product": "AXIOO NOTEBOOK - AXIOO MYBOOK PRO K7...",
+          "type": "PDN",
+          "quantity": "10",
+          "Price": 17660000
+        },
+        {
+          "product": "AXIOO MYBOOK PRO K5 (8N2)",
+          "type": "PDN",
+          "quantity": "10",
+          "Price": 11800000
+        },
+        {
+          "product": "AXIOO AXIOO AXIOO MYPC ONE PRO K3 (8N2)",
+          "type": "PDN",
+          "quantity": "10",
+          "Price": 12500000
+        }
+    ]
+}
