@@ -26,7 +26,7 @@
     <main class="main">
         <div class="search">
             <button class="button">Search By Type</button>
-            <input type="number" id="price" placeholder="Price">
+            <input type="number" id="price" placeholder="Price" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
         </div>
         <div class="table-data">
             <table class="data">
@@ -59,29 +59,54 @@
             ]
 
             $("#price").change(() => {
-                let value = parseInt($("#price").val())
+                let value = $("#price").val()
 
                 $("tbody").empty()
-                $.getJSON("./data/json/hps.json", (data) => {
+                
+                if (value == "") {
+                    $.getJSON("./data/json/hps.json", (data) => {
 
-                for (let index = 0; index < product.length; index++) {
-                        var list = []
+                        for (let index = 0; index < product.length; index++) {
+                            var list = []
 
-                        $("<tr>", {
-                            class: "brand",
-                            html: "<td>" + product[index] +"</td><td></td><td></td><td></td>"
-                        }).appendTo("tbody")
+                            $("<tr>", {
+                                class: "brand",
+                                html: "<td>" + product[index] +"</td><td></td><td></td><td></td>"
+                            }).appendTo("tbody")
 
-                        $.each(data.data, (idx, val) => {
-                            if (val.product.search(product[index]) != -1 && value === val.Price) {
-                                $("<tr>", {
-                                    html: "<td>" + val.product + " </td><td>"+ val.type +"</td><td>"+ val.quantity +"</td><td>"+ (parseInt(val.Price) != 0 ? formatter.format(val.Price) : "-") +"</td>"
-                                }).appendTo("tbody")
-                            }
-                            
-                        })
-                    }
-                })
+                            $.each(data.data, (idx, val) => {
+                                if (val.product.search(product[index]) != -1) {
+                                    $("<tr>", {
+                                        html: "<td>" + val.product + " </td><td>"+ val.type +"</td><td>"+ val.quantity +"</td><td>"+ formatter.format(val.Price) +"</td>"
+                                    }).appendTo("tbody")
+                                }
+                                
+                            })
+                        }
+                    })
+                }else{
+                    $.getJSON("./data/json/hps.json", (data) => {
+                        value = parseInt(value)
+
+                        for (let index = 0; index < product.length; index++) {
+                            var list = []
+
+                            $("<tr>", {
+                                class: "brand",
+                                html: "<td>" + product[index] +"</td><td></td><td></td><td></td>"
+                            }).appendTo("tbody")
+
+                            $.each(data.data, (idx, val) => {
+                                if (val.product.search(product[index]) != -1 && value === val.Price) {
+                                    $("<tr>", {
+                                        html: "<td>" + val.product + " </td><td>"+ val.type +"</td><td>"+ val.quantity +"</td><td>"+ (parseInt(val.Price) != 0 ? formatter.format(val.Price) : "-") +"</td>"
+                                    }).appendTo("tbody")
+                                }
+                                
+                            })
+                        }
+                    })
+                }
             })
 
             $.getJSON("./data/json/hps.json", (data) => {

@@ -26,9 +26,9 @@
         <!-- Header end -->
         <main class="main">
             <div class="search-bar">
-                <input type="number" placeholder="Minimum Price" style="order: 3;" id="price_min">
+                <input type="number" placeholder="Minimum Price" style="order: 3;" id="price_min" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                 <label style="order: 2;">-</label>
-                <input type="number" placeholder="Maximum Price" style="order: 1;" id="price_max">
+                <input type="number" placeholder="Maximum Price" style="order: 1;" id="price_max" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
             </div>
             <div class="product">
                 <div class="side-bar">
