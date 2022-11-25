@@ -1,3 +1,8 @@
+<?php 
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,7 +66,7 @@
             $("#price").change(() => {
                 let value = $("#price").val()
 
-                $("tbody").empty()
+                $("tbody").empty()  
                 
                 if (value == "") {
                     $.getJSON("./data/json/hps.json", (data) => {
