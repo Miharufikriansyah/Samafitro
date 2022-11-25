@@ -1,4 +1,7 @@
 <?php
 
-session_start();
-session_destroy();
+include '../function/Authenticable.php';
+
+$var = new Authenticable();
+
+$var->logout();
