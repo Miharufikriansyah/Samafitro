@@ -10,7 +10,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Styling -->
-    <link rel="stylesheet" href="css/tkdn.css">
+    <link rel="stylesheet" href="../assets/css/tkdn.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">    
     <title>TKDN</title>
 </head>
@@ -18,13 +18,13 @@ session_start();
         <!-- Header start -->
         <header class="header">
             <div class="logo">
-                <a href=""><img src="image/logo/samafitro_logo.png" alt="samafitro"></a>
+                <a href=""><img src="../assets/image/logo/samafitro_logo.png" alt="samafitro"></a>
             </div>
             <div class="navbar">
                 <nav>
-                    <a href="" id="current">Home</a>
-                    <a href="">Product</a>
-                    <a href="">HPS</a>
+                    <a href="/" id="current">Home</a>
+                    <a href="../tkdn">Product</a>
+                    <a href="../hps/">HPS</a>
                 </nav>
             </div>
         </header>
@@ -124,7 +124,7 @@ session_start();
 
                     $(".product-list").empty()
 
-                    $.getJSON("/data/json/data.json", (data) => {
+                    $.getJSON("../data/json/data.json", (data) => {
                         var list = []
 
                         $.each(data.data, (idx, val) => {
@@ -155,7 +155,7 @@ session_start();
 
                     $(".product-list").empty()
 
-                    $.getJSON("/data/json/data.json", (data) => {
+                    $.getJSON("../data/json/data.json", (data) => {
                         var list = []
 
                         $.each(data.data, (idx, val) => {
