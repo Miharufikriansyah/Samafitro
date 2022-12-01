@@ -10,20 +10,20 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- styling -->
-    <link rel="stylesheet" href="css/hps.css">
+    <link rel="stylesheet" href="../assets/css/hps.css">
     <title>HPS</title>
 </head>
 <body>
      <!-- Header start -->
      <header class="header">
         <div class="logo">
-            <a href=""><img src="image/logo/samafitro_logo.png" alt="samafitro"></a>
+            <a href=""><img src="../assets/image/logo/samafitro_logo.png" alt="samafitro"></a>
         </div>
         <div class="navbar">
             <nav>
-                <a href="" id="current">Home</a>
-                <a href="">Product</a>
-                <a href="">HPS</a>
+                <a href="/" id="current">Home</a>
+                <a href="../tkdn">Product</a>
+                <a href="../hps/">HPS</a>
             </nav>
         </div>
     </header>
@@ -69,7 +69,7 @@ session_start();
                 $("tbody").empty()  
                 
                 if (value == "") {
-                    $.getJSON("./data/json/hps.json", (data) => {
+                    $.getJSON("../data/json/hps.json", (data) => {
 
                         for (let index = 0; index < product.length; index++) {
                             var list = []
@@ -90,7 +90,7 @@ session_start();
                         }
                     })
                 }else{
-                    $.getJSON("./data/json/hps.json", (data) => {
+                    $.getJSON("../data/json/hps.json", (data) => {
                         value = parseInt(value)
 
                         for (let index = 0; index < product.length; index++) {
@@ -114,7 +114,7 @@ session_start();
                 }
             })
 
-            $.getJSON("./data/json/hps.json", (data) => {
+            $.getJSON("../data/json/hps.json", (data) => {
 
                 for (let index = 0; index < product.length; index++) {
                     var list = []
